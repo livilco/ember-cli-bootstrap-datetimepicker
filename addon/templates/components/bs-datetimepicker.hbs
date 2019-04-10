@@ -1,9 +1,9 @@
 {{#unless inline}}
   <input
     type="text"
-    class="form-control {{if isMobile "bs-disable"}}"
+    class="form-control {{if (or isMobile readonly) "bs-disable"}}"
     placeholder={{placeholder}}
-    readonly={{isMobile}}
+    readonly={{(or isMobile readonly)}}
     onfocus={{action "focus"}}
   >
   {{#if showIcon}}

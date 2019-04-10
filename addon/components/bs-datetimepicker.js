@@ -41,7 +41,7 @@ export default Component.extend(DynamicAttributeBindings, {
       up: this.getWithDefault('config.icons.up', defaults.icons.up)
     };
 
-    this.$().datetimepicker({
+    let instance = this.$().datetimepicker({
       allowInputToggle: this.getWithDefault('allowInputToggle', defaults.allowInputToggle),
       calendarWeeks: this.getWithDefault('calendarWeeks', defaults.calendarWeeks),
       date: this.getWithDefault('date', null),
@@ -50,6 +50,7 @@ export default Component.extend(DynamicAttributeBindings, {
       disabledHours: this.getWithDefault('disabledHours', defaults.disabledHours),
       enabledDates: this.getWithDefault('enabledDates', defaults.enabledDates),
       enabledHours: this.getWithDefault('enabledHours', defaults.enabledHours),
+      debug: this.getWithDefault('debug', defaults.debug),
       focusOnShow: this.getWithDefault('focusOnShow', defaults.focusOnShow),
       format: this.getWithDefault('format', defaults.format),
       extraFormats: this.getWithDefault('extraFormats', defaults.extraFormats),
