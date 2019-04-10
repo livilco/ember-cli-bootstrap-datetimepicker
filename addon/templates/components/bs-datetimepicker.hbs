@@ -3,7 +3,7 @@
     type="text"
     class="form-control {{if (or isMobile readonly) "bs-disable"}}"
     placeholder={{placeholder}}
-    readonly={{(or isMobile readonly)}}
+    readonly={{or isMobile readonly}}
     onfocus={{action "focus"}}
   >
   {{#if showIcon}}
