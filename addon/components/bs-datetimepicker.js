@@ -41,7 +41,7 @@ export default Component.extend(DynamicAttributeBindings, {
       up: this.getWithDefault('config.icons.up', defaults.icons.up)
     };
 
-    let instance = this.$().datetimepicker({
+    this.$().datetimepicker({
       allowInputToggle: this.getWithDefault('allowInputToggle', defaults.allowInputToggle),
       calendarWeeks: this.getWithDefault('calendarWeeks', defaults.calendarWeeks),
       date: this.getWithDefault('date', null),
@@ -64,7 +64,9 @@ export default Component.extend(DynamicAttributeBindings, {
       showClose: this.getWithDefault('showClose', defaults.showClose),
       showTodayButton: this.getWithDefault('showTodayButton', defaults.showTodayButton),
       sideBySide: this.getWithDefault('sideBySide', defaults.sideBySide),
+      stepping: this.getWithDefault('stepping', defaults.stepping),
       timeZone: this.getWithDefault('timeZone', defaults.timeZone),
+      toolbarPlacement: this.getWithDefault('toolbarPlacement', defaults.toolbarPlacement),
       useCurrent: this.getWithDefault('useCurrent', false),
       viewDate: this.getWithDefault('viewDate', defaults.viewDate),
       viewMode: this.getWithDefault('viewMode', defaults.viewMode),
