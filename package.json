@@ -34,7 +34,7 @@
   "dependencies": {
     "ember-cli-babel": "^7.6.0",
     "ember-cli-htmlbars": "^3.0.1",
-    "btecu-eonasdan-bootstrap-datetimepicker": "4.17.48"
+    "eonasdan-bootstrap-datetimepicker": "https://github.com/livilco/bootstrap-datetimepicker"
   },
   "devDependencies": {
     "@ember/jquery": "^0.6.0",
